@@ -7,9 +7,11 @@
     "end-of-stream": "^1.0.0",
     "mkdirp": "^0.5.0",
     "readable-stream": "^1.0.31",
+    "s3-blob-store": "dweinstein/s3-blob-store#202af5b122",
     "thunky": "^0.1.0"
   },
   "devDependencies": {
+    "aws-sdk": "^2.2.29",
     "abstract-blob-store": "^3.2.0",
     "concat-stream": "^1.4.6",
     "rimraf": "^2.2.8",

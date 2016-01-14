@@ -1,5 +1,6 @@
 var blobs = require('./')
-var store = blobs({path: './data'})
+var AWS = require('aws-sdk')
+var store = blobs({bucket: process.env.S3_BUCKET || 'mybucket', s3: new AWS.S3()})
 
 var w = store.createWriteStream()
 
